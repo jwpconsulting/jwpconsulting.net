@@ -1,0 +1,15 @@
+@media (min-width: 400px) {
+  body {
+    margin: 5% 5%;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 10% 20%;
+  }
+}
+
+p {
+  line-height: 1.5em;
+}
