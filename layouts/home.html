@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>$title$</title>
+        {{ $style := resources.Get "default.css" }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+        <title>JWP Consulting</title>
     </head>
     <body>
         <main role="main">
-            $body$
+            {{.Content}}
         </main>
     </body>
 </html>
