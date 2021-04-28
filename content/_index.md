@@ -2,16 +2,16 @@
 title: Index
 ---
 
-# JWP Consulting
+# JWP Consulting GK
 
-JWP Consulting is a consulting firm specializing in
+JWP Consulting GK is a consulting firm specializing in
 
 - software quality consulting, and
 - high-performance software development.
 
-# JWP Consulting
+# JWP Consulting 合同会社
 
-JWP Consultingはコンサルティング会社です。専門は
+JWP Consulting合同会社はコンサルティング会社です。専門は
 
 - ソフトウエア品質コンサルティングと
 - ハイパフォーマンスソフトウェア開発
