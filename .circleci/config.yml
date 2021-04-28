@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: haskell:8.4.4
+      - image: haskell:9
     steps:
       - run:
           name: Download and add git-lfs apt
