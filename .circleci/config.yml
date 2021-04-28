@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Build everything
           command: stack build -j1
-          no_output_timeout: 30m
+          no_output_timeout: 55m
       - save_cache:
           name: Cache Dependencies
           key: dependencies-{{ checksum "stack.yaml" }}
