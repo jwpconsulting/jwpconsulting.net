@@ -18,6 +18,13 @@ JWP Consulting合同会社はコンサルティング会社です。専門は
 
 でございます。
 
+# Open Source
+
+Open source projects can be found on
+[GitHub](https://github.com/jwp-consulting). If you find any of the works
+helpful, you can donate Bitcoin to
+`bc1q2fa2n7za4tnnylkyjmgexk4dz066vvj3m79sup`.
+
 # Contact
 
 Please direct inquiries to <a href="mailto:hello@jwpconsulting.net">hello@jwpconsulting.net</a>
