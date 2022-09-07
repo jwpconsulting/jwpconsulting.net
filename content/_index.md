@@ -16,7 +16,7 @@ JWP Consulting合同会社はコンサルティング会社です。専門は
 - ソフトウエア品質コンサルティングと
 - ハイパフォーマンスソフトウェア開発
 
-でございます。
+です。
 
 # Projectify
 
@@ -28,7 +28,7 @@ A development preview will soon be available
 
 # Projectify （プロジェクティファイ）
 
-Projectifyとは現在弊社で開発中プロジェクト管理ツールでございます。
+Projectifyとは現在弊社で開発中のプロジェクト管理ツールです。
 
 開発中のプレビューはまもなく[こちら](https://www.projectifyapp.com/)で
 ご覧いただけます。
@@ -43,8 +43,8 @@ helpful, you can donate Bitcoin to
 # オープンソース
 
 オープンソースプロジェクトは[GitHub](https://github.com/jwp-consulting)にござい
-ます。何かプルジェクトがお役に立った場合、Bitcoin受贈を
-`bc1q2fa2n7za4tnnylkyjmgexk4dz066vvj3m79sup`にて受けます。
+ます。また、何かプロジェクトがお役に立った場合には、Bitcoin受贈を
+`bc1q2fa2n7za4tnnylkyjmgexk4dz066vvj3m79sup`にて受けつけていますのでどうぞよろしくお願いします。
 
 # Contact
 
