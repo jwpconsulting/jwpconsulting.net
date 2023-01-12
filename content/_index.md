@@ -6,14 +6,18 @@ title: Index
 
 JWP Consulting GK is a consulting firm specializing in
 
-- software quality consulting, and
+- software quality consulting,
+- network and telecommunications development,
+- embedded system development, and
 - high-performance software development.
 
 # JWP Consulting 合同会社
 
 JWP Consulting合同会社はコンサルティング会社です。専門は
 
-- ソフトウエア品質コンサルティングと
+- ソフトウエア品質コンサルティング
+- ネットワークと通信システム開発
+- 組み込みシステム開発
 - ハイパフォーマンスソフトウェア開発
 
 です。
