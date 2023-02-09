@@ -1,15 +1,8 @@
-@media (min-width: 400px) {
-  body {
-    margin: 5% 5%;
-  }
+body {
+    display: flex;
+    justify-content: center;
 }
-
-@media (min-width: 600px) {
-  body {
-    margin: 10% 20%;
-  }
-}
-
 p {
   line-height: 1.5em;
+  max-width: 40em;
 }
