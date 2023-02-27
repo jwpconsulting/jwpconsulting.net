@@ -1,5 +1,4 @@
 ---
-title: Index
 ---
 
 # JWP Consulting GK

@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{ $style := resources.Get "default.css" }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
-        <title>JWP Consulting</title>
+        <title>{{ with .Title }}{{ . }} - {{ end }}JWP Consulting</title>
     </head>
     <body>
-        {{ block "main" . }}
-        {{ end }}
-        {{ partial "footer.html" . }}
+        <div class="container">
+            {{ block "main" . }}
+            {{ end }}
+            {{ partial "footer.html" . }}
+        </div>
     </body>
 </html>
