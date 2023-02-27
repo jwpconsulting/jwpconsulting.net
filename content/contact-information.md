@@ -1,7 +1,6 @@
 ---
 title: "Contact Information"
 date: 2023-02-27T17:47:31+09:00
-draft: true
 ---
 
 You'll find us located in the lively neighborhood of Shimokitazawa, in Setagaya
