@@ -5,12 +5,14 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{ $style := resources.Get "default.css" }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}">
-        <title>JWP Consulting</title>
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+        <title>{{ with .Title }}{{ . }} - {{ end }}JWP Consulting</title>
     </head>
     <body>
-        <main>
-            {{.Content}}
-        </main>
+        <div class="container">
+            {{ block "main" . }}
+            {{ end }}
+            {{ partial "footer.html" . }}
+        </div>
     </body>
 </html>
