@@ -9,8 +9,8 @@
         <title>JWP Consulting</title>
     </head>
     <body>
-        <main>
-            {{.Content}}
-        </main>
+        {{ block "main" . }}
+        {{ end }}
+        {{ partial "footer.html" . }}
     </body>
 </html>

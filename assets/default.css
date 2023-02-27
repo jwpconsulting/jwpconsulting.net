@@ -1,7 +1,22 @@
 body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+
+footer { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
 p {
   line-height: 1.5em;
   max-width: 40em;
