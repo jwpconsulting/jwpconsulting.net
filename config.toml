@@ -2,3 +2,8 @@ baseURL = "https://www.jwpconsulting.net/"
 languageCode = "en-us"
 title = "JWP Consulting"
 enableRobotsTXT = true
+
+[frontmatter]
+date = [":filename"]
+lastmod = [":git"]
+publishDate = [":filename"]
