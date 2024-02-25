@@ -13,6 +13,10 @@ body {
     gap: 2em;
 }
 
+.container > main {
+    width: 100%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -32,4 +36,13 @@ footer nav {
 
 p {
     line-height: 1.5em;
+}
+
+/* Code blocks */
+article pre {
+  display: block;
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #fdf6e3;
 }
