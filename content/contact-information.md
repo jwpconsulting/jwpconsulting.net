@@ -20,10 +20,10 @@ Setagaya City, Tokyo-to
 ＪＷＰ　Ｃｏｎｓｕｌｔｉｎｇ　合同会社  
 〒１５５ー００３１  
 東京都世田谷区北沢２ー３７ー３  
-下北沢振効舎ビル ３０５号室  
+下北沢振効舎ビル ３０５号室
 
 # Corporate Information
 
 Senior Partner （代表社員）: PERLWITZ, Justus Wilhelm  
 Capital Stock: JPY¥5,000,000  
-Date of Incorpation: 2021-02-09  
+Date of Incorpation: 2021-02-09

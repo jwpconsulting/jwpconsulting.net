@@ -1,17 +1,25 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{ $style := resources.Get "default.css" }}
-        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-        <title>{{ with .Title }}{{ . }} - {{ end }}JWP Consulting</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {{ $time := now }}
+        {{ with resources.Get "default.scss" | toCSS |
+            postCSS (dict "config" "./postcss.config.js") |
+            resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
+        }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ end }}
+        <title>
+            {{ with .Title }}{{ . }} - {{ " " }}{{ end }}JWP Consulting
+        </title>
     </head>
-    <body>
-        <div class="container">
-            {{ block "main" . }}
-            {{ end }}
+    <body class="flex flex-col items-center">
+        <div
+            class="flex max-w-[40em] flex-col items-center justify-center gap-[2em]"
+        >
+            {{ block "main" . }}{{ end }}
             {{ partial "footer.html" . }}
         </div>
     </body>

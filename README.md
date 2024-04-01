@@ -9,10 +9,16 @@ We use [Hugo](https://gohugo.io/) to build this site. The current version at
 the point of writing is
 
 ```
-hugo v0.110.0+extended darwin/arm64 BuildDate=unknown
+hugo v0.120.3+extended darwin/arm64 BuildDate=unknown VendorInfo=nixpkgs
 ```
 
-installed using [Homebrew](https://brew.sh/) on macOS Ventura.
+installed using the nix flake in this repository. Node version 20.9.0 is used. Install postCSS and other dependencies using `npm i`, then run
+
+```
+hugo
+```
+
+to build the site.
 
 # Spellchecking
 

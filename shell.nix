@@ -4,5 +4,7 @@ pkgs.mkShell {
   buildInputs = [
     pkgs.hugo
     pkgs.netlify-cli
+    pkgs.nodejs_20
+    pkgs.circleci-cli
   ];
 }

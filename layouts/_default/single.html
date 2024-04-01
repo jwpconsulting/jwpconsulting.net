@@ -1,10 +1,16 @@
 {{ define "main" }}
-    <main>
-        <h1>
-            {{ .Title }}
-        </h1>
-        <article>
-            {{ .Content }}
-        </article>
+    <main class="w-full">
+        <h1>{{ .Title }}</h1>
+
+        <p>
+            Written
+            {{ with .Params.params.author }}
+                by
+                {{ . }}
+            {{ end }}
+            on
+            {{ .Date.Format "2006-01-02" }}
+        </p>
+        <article>{{ .Content }}</article>
     </main>
 {{ end }}

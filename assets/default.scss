@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  line-height: 1.5em;
+}
+
+/* Code blocks */
+article pre {
+  display: block;
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #fdf6e3;
+}
