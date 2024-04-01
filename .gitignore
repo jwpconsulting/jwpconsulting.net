@@ -1,5 +1,12 @@
-public
-.hugo_build.lock
-.direnv
+/.direnv
+
+# Hugo
+/public
+/.hugo_build.lock
+/resources
+
 # GNU aspell
 *.bak
+
+# Node.js
+/node_modules

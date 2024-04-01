@@ -4,8 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{ $style := resources.Get "default.css" }}
-        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+        {{ $time := now }}
+        {{ with resources.Get "default.scss"
+            | toCSS
+            | postCSS (dict "config" "./postcss.config.js")
+            | resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
+        }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ end }}
         <title>{{ with .Title }}{{ . }} - {{ end }}JWP Consulting</title>
     </head>
     <body>
