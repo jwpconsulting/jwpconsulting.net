@@ -16,9 +16,8 @@
         </title>
     </head>
     <body class="flex flex-col items-center">
-        <div
-            class="flex max-w-[40em] flex-col items-center justify-center gap-[2em]"
-        >
+        <div class="flex max-w-[40em] flex-col items-center justify-center">
+            {{ partial "header.html" . }}
             {{ block "main" . }}{{ end }}
             {{ partial "footer.html" . }}
         </div>
