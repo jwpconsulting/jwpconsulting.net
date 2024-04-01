@@ -1,8 +1,6 @@
 ---
 ---
 
-# JWP Consulting GK
-
 Elevate your technology capabilities with the expertise of JWP Consulting GK.
 Our expertise in
 

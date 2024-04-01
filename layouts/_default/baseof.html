@@ -15,10 +15,9 @@
             {{ with .Title }}{{ . }} - {{ " " }}{{ end }}JWP Consulting
         </title>
     </head>
-    <body class="flex flex-col items-center">
-        <div
-            class="flex max-w-[40em] flex-col items-center justify-center gap-[2em]"
-        >
+    <body class="flex flex-col items-center pb-4">
+        <div class="flex w-full max-w-lg flex-col items-center justify-center">
+            {{ partial "header.html" . }}
             {{ block "main" . }}{{ end }}
             {{ partial "footer.html" . }}
         </div>
