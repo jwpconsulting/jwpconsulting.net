@@ -1,11 +1,11 @@
 {{ define "main" }}
-    <main>
-        <article>
+    <main class="w-full">
+        <header>
             <h1>
                 {{ .Title }}
             </h1>
             {{ .Content }}
-        </article>
+        </header>
         <ul>
             {{ range .Pages }}
               <li>
