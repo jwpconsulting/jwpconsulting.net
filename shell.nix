@@ -5,5 +5,6 @@ pkgs.mkShell {
     pkgs.hugo
     pkgs.netlify-cli
     pkgs.nodejs_20
+    pkgs.circleci-cli
   ];
 }
