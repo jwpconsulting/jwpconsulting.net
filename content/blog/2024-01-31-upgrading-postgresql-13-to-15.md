@@ -1,6 +1,7 @@
 ---
 title: "Upgrading PostgreSQL 13 to 15"
-author: Justus Wilhelm Perlwitz
+params:
+  author: Justus Perlwitz
 ---
 
 Here are some notes on how I upgraded PostgreSQL 13 to 15 on the Heroku
