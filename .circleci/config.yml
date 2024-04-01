@@ -1,9 +1,25 @@
-orbs:
-  hugo: circleci/hugo@0.1
 version: 2.1
+jobs:
+  build:
+    docker:
+      - image: nixos/nix:2.21.1
+    steps:
+      - run:
+          name: Enable flakes
+          command: |
+            mkdir -p /etc/nix
+            echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
+      - checkout
+      - run:
+          name: Install npm packages
+          command: nix develop --command npm install
+      - run:
+          name: Test all
+          command: nix develop --command npm test
+      - run:
+          name: Build with hugo
+          command: nix develop --command hugo
 workflows:
   main:
     jobs:
-      - hugo/build:
-          html-proofer: true
-          version: "0.55"
+      - build
