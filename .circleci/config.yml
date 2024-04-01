@@ -6,4 +6,4 @@ workflows:
     jobs:
       - hugo/build:
           html-proofer: true
-          version: '0.55'
+          version: "0.55"

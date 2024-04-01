@@ -4,7 +4,8 @@
   "description": "JWP Consulting GK corporate site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix": "prettier --ignore-path .gitignore --write .",
+    "test": "prettier --ignore-path .gitignore --check ."
   },
   "author": "",
   "license": "GPL-3.0-or-later",
@@ -13,5 +14,10 @@
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-tailwindcss": "^0.5.13"
   }
 }

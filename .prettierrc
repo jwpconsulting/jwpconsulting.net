@@ -1,0 +1,14 @@
+{
+  "singleQuote": false,
+  "quoteProps": "consistent",
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-go-template"],
+  "overrides": [
+    {
+      "files": ["layouts/**/*.html"],
+      "options": {
+        "parser": "go-template"
+      }
+    }
+  ],
+  "goTemplateBracketSpacing": true
+}
