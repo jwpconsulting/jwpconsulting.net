@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <main class="w-full">
+    <header class="w-full">
         <h1>{{ .Title }}</h1>
 
         <p>
@@ -11,6 +11,20 @@
             on
             {{ .Date.Format "2006-01-02" }}
         </p>
-        <article>{{ .Content }}</article>
-    </main>
+    </header>
+    <article class="w-full">
+        {{ .Content }}
+    </article>
+    <aside class="w-full">
+        {{ with .GetTerms "tags" }}
+            <p>
+                <strong>Tags:</strong>
+            </p>
+            <ul>
+                {{ range . }}
+                    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    </aside>
 {{ end }}

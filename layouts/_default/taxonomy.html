@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <h1 class="w-full">Pages for '{{ .Params.title }}'</h1>
+    <main class="w-full">
+        <ul>
+            {{ range .Data.Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+            {{ end }}
+        </ul>
+    </main>
+{{ end }}
