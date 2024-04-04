@@ -3,6 +3,8 @@ title: "Projectify Development Log #1"
 date: 2024-04-01
 params:
   author: Justus Perlwitz
+tags:
+  - projectify
 ---
 
 Projectify is now _ready for public use_. I've been updating and patching the

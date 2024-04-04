@@ -2,6 +2,9 @@
 title: "Upgrading PostgreSQL 13 to 15"
 params:
   author: Justus Perlwitz
+tags:
+  - postgresql
+  - projectify
 ---
 
 Here are some notes on how I upgraded PostgreSQL 13 to 15 on the Heroku

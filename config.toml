@@ -7,3 +7,7 @@ enableRobotsTXT = true
 date = [":filename"]
 lastmod = [":git"]
 publishDate = [":filename"]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
