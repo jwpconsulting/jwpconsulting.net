@@ -1,5 +1,7 @@
 ---
 title: "Projectify Development Log #2"
+tags:
+  - projectify
 params:
   author: Justus Perlwitz
 ---
