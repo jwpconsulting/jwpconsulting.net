@@ -2,6 +2,8 @@
 title: "Projectify Development Log #3"
 tags:
   - Projectify
+params:
+  author: Justus Perlwitz
 ---
 
 Here are some of the things that have happened since [last week's

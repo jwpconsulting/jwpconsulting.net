@@ -5,21 +5,28 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {{ $time := now }}
-        {{ with resources.Get "default.scss" | toCSS |
+        {{- with resources.Get "default.scss" | toCSS |
             postCSS (dict "config" "./postcss.config.js") |
             resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
-        }}
+        -}}
             <link rel="stylesheet" href="{{ .RelPermalink }}" />
-        {{ end }}
+        {{- end -}}
+        {{ $rss :=  .Site.Home.OutputFormats.Get "rss" }}
+        <link
+            rel="{{ $rss.Rel }}"
+            type="{{ $rss.MediaType.Type }}"
+            href="{{ $rss.Permalink }}"
+            title="{{ .Site.Title }}"
+        />
         <title>
-            {{ with .Title }}{{ . }} - {{ " " }}{{ end }}JWP Consulting
+            {{ with .Title }}{{ printf `%s - ` . }}{{ end }}JWP Consulting
         </title>
     </head>
     <body class="flex flex-col items-center pb-4">
         <div class="flex w-full max-w-lg flex-col items-center justify-center">
-            {{ partial "header.html" . }}
-            {{ block "main" . }}{{ end }}
-            {{ partial "footer.html" . }}
+            {{- partial "header.html" . -}}
+            {{- block "main" . }}{{ end -}}
+            {{- partial "footer.html" . -}}
         </div>
     </body>
 </html>
