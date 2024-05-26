@@ -10,7 +10,14 @@
             resources.ExecuteAsTemplate (printf "styles.%s.css" $time) $time
         -}}
             <link rel="stylesheet" href="{{ .RelPermalink }}" />
-        {{- end }}
+        {{- end -}}
+        {{ $rss :=  .Site.Home.OutputFormats.Get "rss" }}
+        <link
+            rel="{{ $rss.Rel }}"
+            type="{{ $rss.MediaType.Type }}"
+            href="{{ $rss.Permalink }}"
+            title="{{ .Site.Title }}"
+        />
         <title>
             {{ with .Title }}{{ printf `%s - ` . }}{{ end }}JWP Consulting
         </title>
